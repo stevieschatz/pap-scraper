@@ -1,0 +1,17 @@
+{
+  "name": "pap-scraper",
+  "version": "1.0.0",
+  "description": "scraper",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stevieschatz",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
