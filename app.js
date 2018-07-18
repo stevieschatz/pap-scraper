@@ -12,7 +12,7 @@ router.get('/health', (ctx) => {
     ctx.response.body = 200;
 })
 
-router.get('/clubs', async (ctx) => {
+router.get('/clublist', async (ctx) => {
     console.log('Clubs EP hit..')
     //TODO add area
     let clubs = await api.getClubs()
