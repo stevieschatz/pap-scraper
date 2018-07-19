@@ -9,14 +9,14 @@ const api = require('./lib/api.js')
 
 
 router.get('/health', (ctx) => {
-    res.send(200)
+    ctx.response.body = 200;
 })
 
-router.get('/clubs', async (ctx) => {
+router.get('/clublist', async (ctx) => {
     console.log('Clubs EP hit..')
-    let html = await api.getClubs()
-    console.log(html)
-
+    //TODO add area
+    let clubs = await api.getClubs()
+    ctx.response.body = JSON.stringify(clubs)
 })
 
 
